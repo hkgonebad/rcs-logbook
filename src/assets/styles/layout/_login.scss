@@ -2,6 +2,10 @@
     app-header, app-footer{
         display: none;
     }
+
+    main{
+        padding-top: 0;
+    }
 }
 
 .login{
