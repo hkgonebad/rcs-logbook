@@ -10,4 +10,7 @@
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
 // Main
+:root{
+    --bs-header-height: 74px;
+}
 @import "assets/styles/main";

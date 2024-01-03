@@ -17,3 +17,14 @@ a, .btn{
 main{
     padding-top: 70px;
 }
+
+.btn{
+    --bs-border-radius: 0.25rem;
+    --bs-btn-font-size: .75rem;
+    --bs-btn-font-weight: 700;
+}
+
+.btn-light{
+    --bs-btn-border-color: #E5E5E5;
+    --bs-btn-color: #333;
+}

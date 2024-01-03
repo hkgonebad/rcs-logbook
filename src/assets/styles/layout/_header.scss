@@ -5,6 +5,7 @@
     left: 0;
     z-index: 1002;
     background-color: #fff;
+    background: linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
     box-shadow: 0 0.75rem 1.5rem #12263f08;
     border-bottom: 2px solid $success;
 
@@ -16,7 +17,7 @@
         height: 100%;
         width: 1098px;
         background-image: url('/assets/img/bg/header-bg.png');
-        background-size: 100% 70px;
+        background-size: 100% var(--bs-header-height);
         background-repeat: no-repeat;
 
         @include media-breakpoint-up(xl){
@@ -35,12 +36,11 @@
 
         display: flex;
         align-items: center;
-        height: 70px;
+        height: var(--bs-header-height);
     }
 
     .logo{
         margin-left: auto;
-        background: #fff;
 
         img{
             height: 48px;
