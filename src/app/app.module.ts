@@ -11,6 +11,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
 import { CreateProductComponent } from './pages/create-product/create-product.component';
 
 @NgModule({
@@ -28,6 +30,7 @@ import { CreateProductComponent } from './pages/create-product/create-product.co
     FontAwesomeModule,
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
+    BsDatepickerModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

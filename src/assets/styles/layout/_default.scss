@@ -18,6 +18,14 @@ main{
     padding-top: 70px;
 }
 
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex: 1;
+}
+
 .btn{
     --bs-border-radius: 0.25rem;
     --bs-btn-font-size: .75rem;
@@ -27,4 +35,25 @@ main{
 .btn-light{
     --bs-btn-border-color: #E5E5E5;
     --bs-btn-color: #333;
+}
+
+.btn-success{
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+}
+
+.form-floating{
+    font-size: .875rem;
+
+    &.icon{
+        position: relative;
+
+        .ng-fa-icon{
+            position: absolute;
+            right: 15px;
+            top: 17px;
+            color: $gray-600;
+            font-size: .89rem;
+        }
+    }
 }

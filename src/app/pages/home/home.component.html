@@ -7,7 +7,7 @@
         <div class="btns">
             <button class="btn btn-primary" routerLink="/create">Create New Product</button>
             <!-- <button class="btn btn-primary" (click)="newProductModal.show()">Create New Product</button> -->
-            <button class="btn btn-light">Account Settings</button>
+            <button class="btn btn-light" (click)="accountSettings.show()">Account Settings</button>
         </div>
     </div>
 </section>
@@ -103,28 +103,58 @@
     </div>
 </section>
 
-<!-- New Product Modal -->
-<!-- <div bsModal #newProductModal="bs-modal" class="modal fade" tabindex="-1">
+<!-- Account Settings -->
+<div bsModal #accountSettings="bs-modal" class="modal fade" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">New Product</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="newProductModal?.hide()"></button>
+                <h5 class="modal-title">Account Settings</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="accountSettings?.hide()"></button>
             </div>
             <div class="modal-body">
-                <p>Cras mattis consectetur purus sit amet fermentum.
-                    Cras justo odio, dapibus ac facilisis in,
-                    egestas eget quam. Morbi leo risus, porta ac
-                    consectetur ac, vestibulum at eros.</p>
-                <p>Praesent commodo cursus magna, vel scelerisque
-                    nisl consectetur et. Vivamus sagittis lacus vel
-                    augue laoreet rutrum faucibus dolor auctor.</p>
-                <p class="mb-0">Aenean lacinia bibendum nulla sed consectetur.
-                    Praesent commodo cursus magna, vel scelerisque
-                    nisl consectetur et. Donec sed odio dui. Donec
-                    ullamcorper nulla non metus auctor
-                    fringilla.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="pName" placeholder="User Name" value="Harikrishna Nair">
+                            <label for="uName">User Name</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Email" value="harikrishna.nair@ril.com">
+                            <label for="email">Email ID</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="oPass" placeholder="Old Password" value="">
+                            <label for="oPass">Old Password</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="nPass" placeholder="New Password" value="">
+                            <label for="nPass">New Password</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="cPass" placeholder="Confirm Password" value="">
+                            <label for="cPass">Confirm Password</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btns">
+                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-light" (click)="accountSettings?.hide()">Cancel</button>
+                </div>
             </div>
         </div>
     </div>
-</div> -->
+</div>

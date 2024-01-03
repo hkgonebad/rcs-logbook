@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   // Craete New Product Label
-  newProductModal(createNewProductModal: any){
+  accountSettings(createNewProductModal: any){
     this.modalRef = this.modalService.show(createNewProductModal)
   }
 }
