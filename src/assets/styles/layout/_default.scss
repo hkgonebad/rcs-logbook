@@ -1,0 +1,15 @@
+body{
+    font-family: 'JioType', sans-serif;
+    font-weight: 500;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    min-height: 100vh;
+}
+
+a, .btn{
+
+    &:hover{
+        transition: all ease-in-out 250ms;
+    }
+}

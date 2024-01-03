@@ -1,0 +1,129 @@
+.login-page{
+    app-header, app-footer{
+        display: none;
+    }
+}
+
+.login{
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    justify-content: space-between;
+
+    background-image: url('/assets/img/bg/login-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-up(lg){
+        
+    }
+
+    .topLogo{
+        a{
+            padding: 10px 0;
+            display: inline-block;
+        }
+
+        @include media-breakpoint-down(lg){
+            text-align: center;
+        }
+    }
+
+    .loginBlock{
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        .container{
+            
+        }
+
+        h2{
+            font-size: 54px;
+            font-weight: 900;
+            color: #fff;
+            text-transform: uppercase;
+
+            @include media-breakpoint-down(md){
+                font-size: 36px;
+                margin-bottom: 1.125rem;
+            }
+
+            span{
+                font-size: 32px;
+                font-weight: 300;
+                display: block;
+
+                @include media-breakpoint-down(md){
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .loginForm{
+
+            background-color: #fff;
+            background-image: url('/assets/img/bg/login-form-bg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            padding: 3rem;
+            border-radius: 4px;
+
+            h4{
+                font-size: 2rem;
+                font-weight: 900;
+                letter-spacing: -.1rem;
+            }
+
+            p{
+                font-size: .75rem;
+                font-weight: 700;
+            }
+
+            .form-control{
+                font-size: .89rem;
+            }
+
+            .icon{
+                position: relative;
+
+                .ng-fa-icon{
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    color: $gray-600;
+                    font-size: .89rem;
+                }
+            }
+
+            .text-sm{
+                font-size: .75rem;
+                font-weight: 700;
+            }
+
+            .btn{
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .lFooter{
+        text-align: center;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        color: #fff;
+        padding: 10px 0;
+
+        p{
+            margin: 0;
+            font-size: .75rem;
+        }
+    }
+}
