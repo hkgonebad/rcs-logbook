@@ -12,8 +12,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 
 import { CreateProductComponent } from './pages/create-product/create-product.component';
+import { ActivityLogComponent } from './pages/activity-log/activity-log.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { CreateProductComponent } from './pages/create-product/create-product.co
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    CreateProductComponent
+    CreateProductComponent,
+    ActivityLogComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +35,8 @@ import { CreateProductComponent } from './pages/create-product/create-product.co
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
     BsDatepickerModule.forRoot(),
+    AccordionModule.forRoot(),
+    ProgressbarModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

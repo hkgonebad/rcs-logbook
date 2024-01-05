@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class HomeComponent implements OnInit {
   modalRef?: BsModalRef;
+  faTimes = faTimes;
   
   constructor(private modalService: BsModalService) { }
 

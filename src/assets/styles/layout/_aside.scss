@@ -1,0 +1,89 @@
+.aLog{
+    background: #0B364B;
+    overflow: hidden;
+
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    font-size: .875rem;
+
+    .aLogHeader{
+        color: #fff;
+        padding: 1rem .875rem;
+        
+        font-weight: 700;
+    }
+
+    .panel{
+
+        .ng-fa-icon{
+            transform: rotate(0deg);
+            transition: all ease-in-out 250ms;
+        }
+
+        &.panel-open{
+            .btn-link{
+                color: $success;
+            }
+
+            .ng-fa-icon{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .card{
+        border: none;
+        border-radius: 0;
+        background: #ececec;
+
+        .card-header{
+            padding: 0;
+
+            .btn{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                font-size: .875rem;
+                font-weight: 500;
+                color: #000;
+
+                padding: 1.2rem .875rem;
+                border-bottom: 1px solid #E5E5E5;
+            }
+        }
+
+        .card-body{
+            background: #e9f2e6;
+            padding: 0;
+
+            .aLinks{
+
+                a{
+                    padding: 1rem 1rem;
+                    display: block;
+                    font-size: 11px;
+                    color: #999999;
+
+                    span{
+                        display: block;
+                        font-size: 13px;
+                        color: #000;
+                        transition: all ease-in-out 250ms;
+                    }
+
+                    &.active, &:hover, &:focus{
+                        background: $success;
+                        color: #fff;
+
+                        span{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

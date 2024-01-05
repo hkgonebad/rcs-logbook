@@ -57,3 +57,36 @@ main{
         }
     }
 }
+
+.form-control, .form-select{
+    font-size: .875rem;
+}
+
+.modal-xl{
+    @include media-breakpoint-down(lg){
+        --bs-modal-width: 100%;
+    }
+}
+
+.modal-header-none{
+    padding: 0;
+    position: relative;
+    border: none;
+    background-color: transparent;
+
+    .btn-close{
+        position: absolute;
+        right: 0;
+        top: -9px;
+        z-index: 2;
+
+        height: 20px;
+        width: 20px;
+        background-color: $gray-700;
+        background-image: none;
+        color: #fff;
+
+        border-radius: 50%;
+        opacity: 1;
+    }
+}

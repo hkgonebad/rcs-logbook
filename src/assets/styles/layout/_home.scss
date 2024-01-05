@@ -4,6 +4,7 @@
     .container{
         display: flex;
         align-items: center;
+        gap: 10px;
 
         @include media-breakpoint-down(md){
             flex-flow: column;
@@ -13,12 +14,24 @@
     }
 
     h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 900;
         margin: 0;
 
         @include media-breakpoint-down(md){
-            font-size: 1.5rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    h3{
+        margin: 0;
+        margin-left: 3rem;
+        color: $success;
+        font-weight: 900;
+        font-size: 1rem;
+
+        @include media-breakpoint-down(md){
+            margin-left: 0;
         }
     }
 }
@@ -39,6 +52,45 @@
 
     td{
         color: #333;
+        font-weight: 700;
     }
-    
+
+    &.table-sm{
+        td, th{
+            padding: .5rem .75rem;
+        }
+
+        th{
+            background: #003366;
+        }
+    }
+
+    .statusBox{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        span{
+            min-width: 85px;
+        }
+
+        .progress{
+            --bs-progress-height: .75rem;
+            --bs-progress-font-size: 0.5rem;
+            min-width: 200px;
+        }
+
+        &.success{
+            color: $success;
+        }
+        &.danger{
+            color: $danger;
+        }
+        &.open{
+            color: $info;
+        }
+        &.warning{
+            color: $warning;
+        }
+    }
 }
