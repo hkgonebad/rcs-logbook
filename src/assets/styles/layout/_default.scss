@@ -1,0 +1,92 @@
+body{
+    font-family: 'JioType', sans-serif;
+    font-weight: 500;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    min-height: 100vh;
+}
+
+a, .btn{
+
+    &:hover{
+        transition: all ease-in-out 250ms;
+    }
+}
+
+main{
+    padding-top: 70px;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex: 1;
+}
+
+.btn{
+    --bs-border-radius: 0.25rem;
+    --bs-btn-font-size: .75rem;
+    --bs-btn-font-weight: 700;
+}
+
+.btn-light{
+    --bs-btn-border-color: #E5E5E5;
+    --bs-btn-color: #333;
+}
+
+.btn-success{
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+}
+
+.form-floating{
+    font-size: .875rem;
+
+    &.icon{
+        position: relative;
+
+        .ng-fa-icon{
+            position: absolute;
+            right: 15px;
+            top: 17px;
+            color: $gray-600;
+            font-size: .89rem;
+        }
+    }
+}
+
+.form-control, .form-select{
+    font-size: .875rem;
+}
+
+.modal-xl{
+    @include media-breakpoint-down(lg){
+        --bs-modal-width: 100%;
+    }
+}
+
+.modal-header-none{
+    padding: 0;
+    position: relative;
+    border: none;
+    background-color: transparent;
+
+    .btn-close{
+        position: absolute;
+        right: 0;
+        top: -9px;
+        z-index: 2;
+
+        height: 20px;
+        width: 20px;
+        background-color: $gray-700;
+        background-image: none;
+        color: #fff;
+
+        border-radius: 50%;
+        opacity: 1;
+    }
+}
