@@ -30,4 +30,4 @@ For more in-depth insights into Angular CLI, seek assistance through `ng help` o
 
 This logbook isn't merely a record; it's a dedicated intranet portal meticulously designed for our organizational needs. Noteworthy dependencies, such as ngx-bootstrap and angular-fontawesome, contribute to the project's robust foundation.
 
-Explore the project on GitHub: [RcsLogbook Repository](https://github.com/awzdigital/rcs-logbook/)
+Explore the project on GitHub: [RcsLogbook Repository](https://github.com/hkgonebad/rcs-logbook/)
